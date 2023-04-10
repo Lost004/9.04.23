@@ -2,10 +2,10 @@ let counter = 0;
 const back = document.querySelector('.back');
 const next = document.querySelector('.next');
 const slider = document.querySelector('.slider');
-const max = document.querySelector('.slide').length - 1;
+const max = document.querySelectorAll('.slide').length - 1;
 
 
-function sliderFunc()() => {
+function sliderFunc() {
     if (counter < max) {
         counter++;
         slider.style.left = '-' + 800 * counter + 'px'
